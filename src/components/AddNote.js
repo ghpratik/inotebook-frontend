@@ -18,7 +18,7 @@ const AddNote = (props) => {
         setProgress(70);
         setNote({ title: "", description: "", tag: "" })
         setProgress(100);
-        props.showAlert("Added Successfully", "success")
+        props.showAlert("Note Added Successfully", "success")
     }
 
     const onChange = (e) => {
