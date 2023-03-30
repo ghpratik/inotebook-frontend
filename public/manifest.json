@@ -8,12 +8,12 @@
       "type": "image/png"
     },
     {
-      "src": "logo-light.png",
+      "src": "favicon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo-dark.png",
+      "src": "logo-light.png",
       "type": "image/png",
       "sizes": "1024x512"
     }
