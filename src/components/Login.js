@@ -66,9 +66,9 @@ const Login = (props) => {
                         </div>
                     </div>
                     <div className="md-3">
-                        <button type="submit" className="btn btn-primary me-3 mt-3">Login</button>
-                        <Link to="/forgotPass" className="text-decoration-none text-light"><button className="btn btn-secondary me-3 mt-3">Forgot Password</button></Link>
-                        <Link to="/signup" className="mt-3">Don't have an account?</Link>
+                        <button type="submit" className="btn btn-primary me-3">Login</button>
+                        <Link to="/forgotPass" className="text-decoration-none text-light"><button className="btn btn-secondary me-3">Forgot Password</button></Link>
+                        <Link to="/signup">Don't have an account?</Link>
                     </div>
                 </form>
             </div>
