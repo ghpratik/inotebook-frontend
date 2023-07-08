@@ -42,7 +42,7 @@ const Notes = (props) => {
         setProgress(70);
         refClose.current.click();
         setProgress(100);
-        props.showAlert("Updated Successfully", "success");
+        props.showAlert("Note Updated Successfully", "success");
     }
 
 
