@@ -12,10 +12,11 @@ import NoteState from './context/notes/NoteState';
 import Alert from './components/Alert';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import Getstarted from './components/Getstarted';
 import ForgotPass from './components/ForgotPass';
 import 'bootstrap/dist/css/bootstrap.css';
 import LoadingBar from 'react-top-loading-bar'
-export const host = process.env.REACT_APP_HOST;
+export const host = process.env.REACT_APP_BACKEND_URL;
 function App() {
   const [alert, setAlert] = useState(null);
   const [progress, setProgress] = useState(0);
@@ -38,6 +39,7 @@ function App() {
           <div className="container">
             <Routes>
               <Route exact path="/" element={<Home showAlert={showAlert} setProgress={setProgress} />} />
+              <Route exact path="/getstarted" element={<Getstarted showAlert={showAlert} setProgress={setProgress} />} />
               <Route exact path="/about" element={<About />} setProgress={setProgress} />
               <Route exact path="/login" element={<Login showAlert={showAlert} setProgress={setProgress} />} />
               <Route exact path="/signup" element={<SignUp showAlert={showAlert} setProgress={setProgress} />} />

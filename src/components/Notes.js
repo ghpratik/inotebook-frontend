@@ -25,7 +25,7 @@ const Notes = (props) => {
             setProgress(100);
         } else {
             setProgress(100);
-            navigate("/login");
+            navigate("/getstarted");
         }
         // eslint-disable-next-line
     }, [])
