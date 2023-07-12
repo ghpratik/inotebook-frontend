@@ -119,7 +119,7 @@ const SignUp = (props) => {
 
   return (
     <div className="container border border-dark p-3" style={{ maxWidth: '600px' }}>
-      <h2 className="text-success">Create an account - memopad</h2>
+      <h2 className="text-success">Create an account - <b style={{"color": '#ff29cb', "display": 'inline-block'}}>memopad</b></h2>
       <form onSubmit={handleSubmit} className="mb-3">
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>

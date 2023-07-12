@@ -51,7 +51,7 @@ const Login = (props) => {
     return (
         <div className="container d-flex justify-content-center">
             <div style={{ maxWidth: '700px' }} className="w-100">
-                <h2 className="text-primary">Login to memopad</h2>
+                <h2 className="text-primary">Login to <b style={{"color": '#ff29cb', "display": 'inline-block'}}>memopad</b></h2>
                 <form onSubmit={handleSubmit} className="border border-primary rounded px-5 py-3 d-flex flex-column">
                     <div className="mb-3">
                         <label htmlFor="email" className="form-label">Email address</label>
