@@ -51,7 +51,7 @@ const Login = (props) => {
     return (
         <div className="container d-flex justify-content-center">
             <div style={{ maxWidth: '700px' }} className="w-100">
-                <h2 className="text-primary">Login to iNotebook</h2>
+                <h2 className="text-primary">Login to memopad</h2>
                 <form onSubmit={handleSubmit} className="border border-primary rounded px-5 py-3 d-flex flex-column">
                     <div className="mb-3">
                         <label htmlFor="email" className="form-label">Email address</label>
@@ -68,7 +68,7 @@ const Login = (props) => {
                     <div className="md-3">
                         <button type="submit" className="btn btn-primary me-3 mt-3">Login</button>
                         <Link to="/forgotPass" className="text-decoration-none text-light"><button className="btn btn-secondary me-3 mt-3">Forgot Password</button></Link>
-                        <Link to="/signup" className="mt-3">Don't have an account?</Link>
+                        <Link to="/signup"><p className="mt-3">Don't have an account?</p></Link>
                     </div>
                 </form>
             </div>
