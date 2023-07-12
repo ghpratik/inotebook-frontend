@@ -1,12 +1,47 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+function GetStarted() {
 
-const Getstarted = () => {
+  const headingStyle = {
+    color: '#1c3474',
+    fontSize: '100px'
+  };
+
+  const btnStyle = {
+    display: 'inline-block',
+    padding: '10px 20px',
+    backgroundColor: '#4CAF50',
+    color: 'white',
+    textDecoration: 'none',
+    transition: 'background-color 0.3s',
+    margin: '10px',
+  };
+
+  const pageStyle = {
+    position: 'fixed',
+    top: '0',
+    left: '0',
+    padding: '150px',
+    textAlign: 'center',
+    background: '#f2f2f2',
+    backgroundImage: 'url("../assets/background.jpg")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    minHeight: '100vh',
+  };
+  //#87ffdd logo color
+
   return (
-    <div className="d-flex justify-content-around align-items-center border border-primary border-2">
-      <div className="flex-grow-1  border border-primary border-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore rerum eveniet culpa omnis expedita voluptates et hic, aperiam possimus cumque facere accusantium odio ducimus modi necessitatibus minima sed suscipit porro!</div>
-        <div className="flex-grow-1 border border-primary mw-50">Illustration</div>
+    <div style={pageStyle}>
+      <h1 style={headingStyle}>Start Organizing your notes with memopad!</h1>
+      <div>
+        <h4>Store your notes and never forget important information again.</h4>
+        {/* <Link style={btnStyle} to="/login">Get Started <FontAwesomeIcon icon="fa-solid fa-arrow-right" beatFade style={{color: "#ffffff",}} /></Link> */}
+        <Link style={btnStyle} to="/login">Get Started</Link>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Getstarted
+export default GetStarted;
+
