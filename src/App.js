@@ -12,10 +12,13 @@ import NoteState from './context/notes/NoteState';
 import Alert from './components/Alert';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
-import GetStarted from './components/GetStarted'
+import GetStarted from './components/GetStarted';
 import ForgotPass from './components/ForgotPass';
 import 'bootstrap/dist/css/bootstrap.css';
 import LoadingBar from 'react-top-loading-bar'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fas)
 export const host = process.env.REACT_APP_BACKEND_URL;
 function App() {
   const [alert, setAlert] = useState(null);
