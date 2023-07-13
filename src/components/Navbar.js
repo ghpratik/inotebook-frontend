@@ -17,9 +17,10 @@ const Navbar = (props) => {
         setProgress(100);
         navigate("/login");
     }
+    console.log(location.pathname);
 
     return (
-        <nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <nav className={`navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${location.pathname==='/getstarted' ? 'd-none' : ''}`}>
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/"><img src={logo} alt="logo" className="img-fluid" style={{maxWidth: '150px'}}></img></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
