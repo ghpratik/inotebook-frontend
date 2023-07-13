@@ -17,7 +17,6 @@ const Navbar = (props) => {
         setProgress(100);
         navigate("/login");
     }
-    console.log(location.pathname);
 
     return (
         <nav className={`navbar navbar-expand-lg bg-dark navbar-dark fixed-top ${location.pathname==='/getstarted' ? 'd-none' : ''}`}>
