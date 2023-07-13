@@ -46,7 +46,9 @@ h4 {
 }
 
 .heading {
-  color: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  color: #b9ff69;
+  text-align: start;
+  padding-left: 5%;
   background: rgb(208,146,250);
 background: linear-gradient(98deg, rgba(208,146,250,1) 0%, rgba(46,205,218,1) 53%, rgba(129,33,238,1) 100%);
   padding-bottom: 2rem;
