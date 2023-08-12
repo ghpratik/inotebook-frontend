@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
     
@@ -11,15 +12,15 @@ const Hero = () => {
                            <span className="text-indigo-400"> Cloud with memopad</span>
                       </h1>
                       <p className="text-gray-300 max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
-                          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+                      Do you want to keep your notes organized and accessible from anywhere? Try our cloud-based note-taking service and enjoy the convenience of syncing your notes across all your devices.
                       </p>
                       <div className="pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start">
-                          <a href="/login" className="px-7 py-3 w-full bg-white text-gray-800 text-center rounded-md shadow-md block sm:w-auto">
+                          <Link href="/login" className="px-7 py-3 w-full bg-gray-700 text-gray-200 hover:bg-indigo-700 text-center rounded-md shadow-md block sm:w-auto">
                               Get started
-                          </a>
-                          <a href="/about" className="px-7 py-3 w-full bg-gray-700 text-gray-200 text-center rounded-md block sm:w-auto">
+                          </Link>
+                          <Link href="/about" className="px-7 py-3 w-full bg-white text-gray-800 hover:bg-gray-100 text-center rounded-md block sm:w-auto">
                               about
-                          </a>
+                          </Link>
                       </div>
                   </div>
                   <div className="flex-1 text-center mt-7 lg:mt-0 lg:ml-3">

@@ -47,11 +47,12 @@
 
 // export default Navbar
 
-
+///TO DO USER PROFILE WHEN ON HOME PAGE AND LOGOUT BUTTON
 
 
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import  logo  from '../assets/full-logo.png';
 
 const Navbar = () => {
 
@@ -91,7 +92,7 @@ const Navbar = () => {
               <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
                     <Link to="/">
                         <img
-                            src="../assets/full-logo.png"
+                            src={logo}
                             width={120} 
                             height={50}
                             alt="Memopad logo"
