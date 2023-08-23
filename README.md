@@ -1,6 +1,6 @@
 # MemoPad - Cloud Note Storage Website
 
-![MemoPad Logo](/path/to/logo.png)
+![MemoPad Logo](src/assets/Memopad.svg)
 
 MemoPad is a user-friendly web application that enables users to store and manage their notes in the cloud. With MemoPad, you can access your notes from anywhere, collaborate with others, and never worry about losing your important information.
 
